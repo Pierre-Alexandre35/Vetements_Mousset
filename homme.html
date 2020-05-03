@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cacce4337.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Boutique : Homme</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Vêtements Mousset</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="femme.html">Femme</a></li>
+            <li><a href="homme.html">Homme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </nav>
+    <section>
+        <div class="showcase">
+            <div class="side-filter">
+                <button id="btn-all" class="btn" onclick="filterSelection('all')">Voir tout</button>
+
+            </div>
+            <div class="articles-container">
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_1/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_1/back.jpg" alt="jupe">
+                    <h4 class="article-title">Bermuda coupe cargo rouge</h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+
+
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_2/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_2/back.jpg" alt="jupe">
+                    <h4 class="article-title">Bermuda coupe chino camel</h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_3/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_3/back.jpg" alt="jupe">
+                    <h4 class="article-title">Blouson en coton stretch navy
+                    </h4>
+                    <p class="prix">99,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_4/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_4/back.jpg" alt="jupe">
+                    <h4 class="article-title">Chemise droite imprimée ocre
+                    </h4>
+                    <p class="prix">54,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_5/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_5/back.jpg" alt="jupe">
+                    <h4 class="article-title">Chemise manches courtes motifs colorés rouge
+                    </h4>
+                    <p class="prix">45,00€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_6/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_6/back.jpg" alt="jupe">
+                    <h4 class="article-title">Chemise slim en tissu jacquard bleu </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_7/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/homme/article_7/front.jpg" alt="veste">
+                    <h4 class="article-title">Costume Edwin bleu
+
+                    </h4>
+                    <p class="prix">n.d</p>
+                </a>
+
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_8/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/homme/article_8/back.jpg" alt="veste">
+                    <h4 class="article-title">Doudoune sans manches réversible kaki</h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_9/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/homme/article_9/back.jpg" alt="veste">
+                    <h4 class="article-title">Pantalon chino en coton stretch camel
+
+                    </h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_10/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/homme/article_10/back.jpg" alt="veste">
+                    <h4 class="article-title">Pantalon chino en coton stretch tomette
+
+                    </h4>
+                    <p class="prix">n.d</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_11/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/homme/article_11/back.jpg" alt="veste">
+                    <h4 class="article-title">Polo en piqué détails contrastés bleu indigo
+
+                    </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_12/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/homme/article_12/back.jpg" alt="bas">
+                    <h4 class="article-title">Polo en piqué détails contrastés vert emeraude
+                    </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_13/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/homme/article_13/back.jpg" alt="bas">
+                    <h4 class="article-title">Polo maille piquée fluide et légère bleu indigo
+                    </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="">
+                    <img class="article-front" src="images/vitrine/homme/article_14/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/homme/article_14/back.jpg" alt="bas">
+                    <h4 class="article-title">24.95€ </h4>
+                    <p class="prix">79,95€</p>
+                </a>
+
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <h1>Contactez-Nous</h1>
+                <div class="close-popup">
+                    <i class="fas fa-times-circle fa-2x"></i>
+                </div>
+                <div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <h3>06.37.80.63.16</h3>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <h3>vetements-mousset@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

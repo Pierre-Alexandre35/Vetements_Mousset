@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h4>Vêtements Mousset</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="femme.html">Femme</a></li>
+            <li><a href="homme.html">Homme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </nav>
+    <section>
+        <div class="showcase">
+            <div class="side-filter">
+                <button id="btn-all" class="btn" onclick="filterSelection('all')">Voir tout</button>
+                <button id="btn-hauts" class="btn" onclick="filterSelection('hauts')">Hauts</button>
+                <button id="btn-bas" class="btn" onclick="filterSelection('bas')">Bas</button>
+                <button id="btn-robe" class="btn" onclick="filterSelection('robe')">Robes</button>
+                <button id="btn-vestes" class="btn" onclick="filterSelection('vestes')">Vestes</button>
+                <button id="btn-autres" class="btn" onclick="filterSelection('autres')">Autres</button>
+
+            </div>
+            <div class="articles-container">
+                <a href="#"  class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_1/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_1/back.jpg" alt="jupe">
+                    <h4 class="article-title">Blouse chic noire Christine Laure</h4>
+                    <p class="prix">59,95€</p>
+                </a>
+                <a href="#" class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_2/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_2/back.jpg" alt="jupe">
+                    <h4 class="article-title">Blouse en voile imprimé Terracotta Diane Laury</h4>
+                    <p class="prix">54,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_3/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_3/back.jpg" alt="jupe">
+                    <h4 class="article-title">Blouse légère imprimée rouge C'est Beau la Vie
+                    </h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_4/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_4/back.jpg" alt="jupe">
+                    <h4 class="article-title">Tee-shirt imprimé effet lacé dos mangue C'est Beau la Vie
+                    </h4>
+                    <p class="prix">15,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_5/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_5/back.jpg" alt="jupe">
+                    <h4 class="article-title">Tee-shirt rayé léger bleue marine C'est Beau la Vie
+                    </h4>
+                    <p class="prix">29,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="hauts">
+                    <img class="article-front" src="images/vitrine/femme/hauts/article_6/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/hauts/article_6/back.jpg" alt="jupe">
+                    <h4 class="article-title">Tee-shirt uni coton/modal BLANC ou MARINE c’est beau la vie
+
+                    </h4>
+                    <p class="prix">14,95€</p>
+                </a>
+
+
+
+                <a href="#" class="article" data-filter="vestes">
+                    <img class="article-front" src="images/vitrine/femme/vestes/article_1/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/femme/vestes/article_1/back.jpg" alt="veste">
+                    <h4 class="article-title">Blouson en suédine Marine Diane Laury
+
+                    </h4>
+                    <p class="prix">89,95€</p>
+                </a>
+
+
+                <a href="#" class="article" data-filter="vestes">
+                    <img class="article-front" src="images/vitrine/femme/vestes/article_2/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/femme/vestes/article_2/back.jpg" alt="veste">
+                    <h4 class="article-title">Cardigan boléro Rose Pale Diane Laury
+
+                    </h4>
+                    <p class="prix">69,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="vestes">
+                    <img class="article-front" src="images/vitrine/femme/vestes/article_3/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/femme/vestes/article_3/back.jpg" alt="veste">
+                    <h4 class="article-title">Cardigan maille ruban Corail Diane Laury
+
+                    </h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="vestes">
+                    <img class="article-front" src="images/vitrine/femme/vestes/article_4/front.jpg" alt="jupe">
+                    <img class="article-back" src="images/vitrine/femme/vestes/article_4/back.jpg" alt="veste">
+                    <h4 class="article-title">Veste Boléro 100% lin Mastic Diane Laury
+
+                    </h4>
+                    <p class="prix">69,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="vestes">
+                    <img class="article-front" src="images/vitrine/femme/vestes/article_5/front.jpg" alt="veste">
+                    <img class="article-back" src="images/vitrine/femme/vestes/article_5/back.jpg" alt="veste">
+                    <h4 class="article-title">Veste en tissu denim Jean Stone C'est Beau la vie
+
+                    </h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+
+
+
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_1/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_1/back.jpg" alt="bas">
+                    <h4 class="article-title">Jogpant en tissu  Terracotta Diane Laury
+
+                    </h4>
+                    <p class="prix">69,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_2/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_2/back.jpg" alt="bas">
+                    <h4 class="article-title">Jupe longue plissée Christine Laure
+                    </h4>
+                    <p class="prix">79,95€</p>
+                </a>
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_3/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_3/back.jpg" alt="bas">
+                    <h4 class="article-title">Pantacourt stretch safran Christine Laure
+
+                    </h4>
+                    <p class="prix">79,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_4/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_4/back.jpg" alt="bas">
+                    <h4 class="article-title">Pantalon 5 poches mangue C'est Beau la Vie
+
+                    </h4>
+                    <p class="prix">49,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_5/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_5/back.jpg" alt="bas">
+                    <h4 class="article-title">Pantalon 5 poches rose C'est Beau la Vie
+
+                    </h4>
+                    <p class="prix">49,95€</p>
+                </a>
+                
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_6/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_6/back.jpg" alt="bas">
+                    <h4 class="article-title">Short avec ceinture beige
+
+                    </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+
+
+                <a href="#" class="article" data-filter="bas">
+                    <img class="article-front" src="images/vitrine/femme/bas/article_7/front.jpg" alt="bas">
+                    <img class="article-back" src="images/vitrine/femme/bas/article_7/back.jpg" alt="bas">
+                    <h4 class="article-title">Short avec ceinture rouge CBVL
+
+                    </h4>
+                    <p class="prix">39,95€</p>
+                </a>
+                
+
+
+
+
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_1/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_1/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe chic voile rose Christine Laure</h4>
+                    <p class="prix">99,95€</p>
+                </a>
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_2/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_2/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe effet lin avec dentelle mastic Diane Laury</h4>
+                    <p class="prix">99,95€</p>
+                </a>
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_3/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_3/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe en coton et lin stretch vert anis</h4>
+                    <p class="prix">n.d</p>
+                </a>
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_4/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_4/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe en jersey fluide uni marine</h4>
+                    <p class="prix">n.d</p>
+                </a>
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_5/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_5/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe fluide imprimée rose pale Diane Laury</h4>
+                    <p class="prix">89,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_6/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_6/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe housse imprimée à pois ecru Diane Laury</h4>
+                    <p class="prix">79,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_7/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_7/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe imprimée rose pale c'est beau la vie</h4>
+                    <p class="prix">49,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_8/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_8/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe imprimée verte christine laure</h4>
+                    <p class="prix">99,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_9/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_9/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe longue fleurie bleu cyan c'est beau la vie</h4>
+                    <p class="prix">49,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_10/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_10/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe longue fluide et légère rouge C'est Beau la Vie</h4>
+                    <p class="prix">49,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_11/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_11/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe longue imprimée Christine Laure</h4>
+                    <p class="prix">99,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_12/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_12/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe rouge chic à volants Christine Laure</h4>
+                    <p class="prix">99,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="robe">
+                    <img class="article-front" src="images/vitrine/femme/robe/article_13/front.jpg" alt="robe">
+                    <img class="article-back" src="images/vitrine/femme/robe/article_13/back.jpg" alt="robe">
+                    <h4 class="article-title">Robe 100% lyocell uni blue marine C'est Beau la Vie</h4>
+                    <p class="prix">59,95€</p>
+                </a>
+
+                <a href="#" class="article" data-filter="autres">
+                    <img class="article-front" src="images/vitrine/femme/autres/article_1/front.jpg" alt="combi">
+                    <img class="article-back" src="images/vitrine/femme/autres/article_1/back.jpg" alt="combi">
+                    <h4 class="article-title">Combi-pantalon crépon imprimé bleu cyan C'est Beau la Vie</h4>
+                    <p class="prix">49,95€</p>
+                </a>
+            </div>
+            <div class="popup">
+                <p>hello zord</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur neque necessitatibus? Sequi, cumque.</p>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
