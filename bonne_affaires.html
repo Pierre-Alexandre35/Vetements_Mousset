@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cacce4337.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Boutique : Bonnes Affaires</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><h4>Vêtements Mousset</h4></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="femme.html">Femme</a></li>
+            <li><a href="homme.html">Homme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="bonne_affaires.html">Bonnes Affaires</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </nav>
+    <section class="main">
+        <div class="showcase">
+            <div class="side-filter">
+                <button id="btn-all" class="btn" onclick="filterSelection('all')">Voir tout</button>
+                <button id="btn-hauts" class="btn" onclick="filterSelection('homme')">Homme</button>
+                <button id="btn-bas" class="btn" onclick="filterSelection('femme')">Femme</button>
+
+            </div>
+            <div class="articles-container">
+                <a href="#"  class="article" data-filter="femme">
+                    <img class="article-front" src="images/vitrine/bonnes_affaires/pantalons et pantacourts femmes 29€90 retouches comprises - Copie.JPG" alt="femme">
+                    <img class="article-back" src="images/vitrine/bonnes_affaires/pantalons et pantacourts femmes 29€90 retouches comprises - Copie.JPG" alt="femme">
+                    <h4 class="article-title">Pantalons et pantacourts</h4>
+                    <p class="prix">29,90€ (retouches comprises)</p>
+                </a>
+                <a href="#" class="article" data-filter="homme">
+                    <img class="article-front" src="images/vitrine/bonnes_affaires/pantalon jean crazy 29€90 retouches comprises.jpg" alt="homme">
+                    <img class="article-back" src="images/vitrine/bonnes_affaires/pantalon jean crazy 29€90 retouches comprises.jpg" alt="homme">
+                    <h4 class="article-title">Pantalon Jean Crazy</h4>
+                    <p class="prix">29,90€ (retouches comprises)</p>
+                </a>
+
+                <a href="#" class="article" data-filter="homme">
+                    <img class="article-front" src="images/vitrine/bonnes_affaires/pantalon jean crazy a 29€90 retouches comprises.jpg" alt="homme">
+                    <img class="article-back" src="images/vitrine/bonnes_affaires/pantalon jean crazy a 29€90 retouches comprises.jpg" alt="homme">
+                    <h4 class="article-title">Pantalon Jean Crazy
+                    </h4>
+                    <p class="prix">29,90€ (retouches comprises)</p>
+                </a>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <h1>Contactez-Nous</h1>
+                <div class="close-popup">
+                    <i class="fas fa-times-circle fa-2x"></i>
+                </div>
+                <div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <h3>06.37.80.63.16</h3>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <h3>vetements-mousset@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

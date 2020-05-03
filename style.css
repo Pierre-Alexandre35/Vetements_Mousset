@@ -24,7 +24,7 @@ border-radius: 0;
 }
 
 nav{
-    position:sticky;
+    position:fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,6 +35,10 @@ nav{
     z-index: 1000;
 }
 
+.main{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .logo{
     color: rgb(226, 226, 226);
     text-transform: uppercase;
@@ -42,6 +46,9 @@ nav{
     font-size: 22px;
 }
 
+.logo a{
+    color: rgb(226, 226, 226);
+}
 
 .nav-links{
     display: flex;
@@ -314,7 +321,7 @@ nav{
     margin-bottom: 20px;
 }
 
-.header-content a{
+.btn-main {
 display:inline-block;
 padding:0.7em 1.8em;
 margin:0 0.3em 0.3em 0;
@@ -328,11 +335,18 @@ background-color:#4eb5f1;
 text-align:center;
 transition: all 0.2s;
 }
-.header-content a:hover{
+.btn-main:hover{
 background-color:#4095c6;
 }
 
-
+.btn-main-orange{
+    margin-top: 10px;
+    width: 70%;
+    background-color: rgb(199, 150, 60);
+}
+.btn-main-orange:hover{
+    background-color: rgb(173, 117, 13);
+}
 @media screen and (max-width: 1024px){
     .header{
         background: rgba(255, 255, 255, 0.8);
@@ -341,10 +355,13 @@ background-color:#4095c6;
         margin: 0;
     }
 
-    .header-content a{
+    .btn-main{
         display:block;
         margin:1em auto;
         }
+    .btn-main-orange{
+        width: 100%;
+    }
 }
 
 .selected{
