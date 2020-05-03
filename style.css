@@ -202,6 +202,7 @@ nav{
     padding:12px;
     width: 100%;
     text-align: center;
+    -webkit-appearance: none; 
 }
 
 .side-filter  button.active {
@@ -353,6 +354,7 @@ background-color:#4095c6;
 }
 
 .popup-content{
+    padding:10px;
     left:0;
     right:0;
     position: absolute;
