@@ -95,7 +95,7 @@ nav{
         background-color: #504954;
         flex-direction: column;
         align-items: center;
-        width: 45%;
+        width: auto;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
