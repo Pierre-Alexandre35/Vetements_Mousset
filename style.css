@@ -98,6 +98,7 @@ nav{
         width: auto;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        padding-left:2px;
     }
 
     .nav-links li{
