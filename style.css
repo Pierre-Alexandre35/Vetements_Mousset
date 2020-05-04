@@ -130,6 +130,7 @@ nav{
     }
     to{
         opacity: 1;
+        opacity: 1;
         transform:translateX(0px);
     }
 }
@@ -193,9 +194,12 @@ nav{
 }
 
 
-
+.tailles{
+    font-size: 14px;
+    color: rgb(160, 116, 34);
+}
 .prix{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 
@@ -273,24 +277,29 @@ nav{
     flex-wrap: wrap;
 }
 
-
 .contact-infos{
-    width: 35%;
+    width: 50%;
+    padding: 1.5rem;
+}
+
+.contact-hours{
+
+    width: 50;
     min-width: 350px;
 }
 
-.contact-infos .container{
+.contact-hours .container{
     text-align: center;
 }
 
-.contact-infos .container table{
+.contact-hours .container table{
     margin-left: 2.5rem;
     border-collapse:separate; 
     border-spacing: 0 1rem;
     text-align: left;
 }
 
-.contact-infos .container td{
+.contact-hours .container td{
     padding-left: 5rem;
 }
 
@@ -322,9 +331,9 @@ nav{
 }
 
 .btn-main {
-display:inline-block;
+display:block;
 padding:0.7em 1.8em;
-margin:0 0.3em 0.3em 0;
+margin:1rem;
 border-radius:2em;
 box-sizing: border-box;
 text-decoration:none;
@@ -340,8 +349,6 @@ background-color:#4095c6;
 }
 
 .btn-main-orange{
-    margin-top: 10px;
-    width: 70%;
     background-color: rgb(199, 150, 60);
 }
 .btn-main-orange:hover{
@@ -400,4 +407,8 @@ background-color:#4095c6;
     position: absolute;
     right:-8px;
     top:-9px;
+}
+
+.contact-infos div{
+    margin-bottom: 10px;
 }
