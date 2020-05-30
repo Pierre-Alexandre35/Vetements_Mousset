@@ -3,7 +3,6 @@ www.vetements-mousset.fr
 
 
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://vetements-mousset.fr/)
-[![HitCount](http://hits.dwyl.com/Pierre-Alexandre35/Personal_Website.svg)](http://hits.dwyl.com/Pierre-Alexandre35/Vetements-mousset)
 <img alt="GitHub code version" src="https://img.shields.io/badge/version-1.0-pink">
 
 ## Description
