@@ -1,4 +1,4 @@
-# vetements_mousset: Virtiaul Clothes Storefront👗 
+# vetements_mousset: Virtual Clothes Storefront👗 
 www.vetements-mousset.fr
 
 
