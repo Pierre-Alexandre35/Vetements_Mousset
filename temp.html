@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/c4fbe41092.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="slideshow">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <h4>Vêtements Mousset</h4>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Acceuil</a></li>
+                <li><a href="femme.html">Femme</a></li>
+                <li><a href="homme.html">Homme</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="bonne_affaires.html">Bonnes Affaires</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
+            </div>
+        </nav>
+        <div class="slide slide-1">
+            <div class="slideshow-content">
+                <h2>Collection Homme</h2>
+                <a href="">Voir articles</a>
+            </div>
+
+        </div>
+        <div class="slide slide-2">
+            <div class="slideshow-content">
+                <h2>Collection Homme</h2>
+                <a href="">Voir articles</a>
+            </div>
+        </div>
+        <div class="slide slide-3">
+            <div class="slideshow-content">
+                <h2>Collection Homme</h2>
+                <a href="">Voir articles</a>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="left-button" onclick="plusDivs(-1); stopAutoSlide();">&#10094;</button>
+            <button class="right-button" onclick="plusDivs(+1); stopAutoSlide();">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="introducton">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem vero, maiores perferendis nobis id
+                aliquam laborum incidunt! Repellat saepe praesentium voluptatem dolorum. Id, delectus. Alias ratione
+                ducimus, ab corporis magnam dolor ullam qui iusto!</p>
+        </div>
+        <div class="banner-1">
+            <ul>
+                <li><i class="fas fa-map-marked-alt"></i></li>
+                <li><i class="fas fa-user-friends"></i></li>
+                <li><i class="fas fa-cut"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaNHwDI_QRp930aWYc3f9PRQgr1FSSnbA&callback=initMap">
+        </script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

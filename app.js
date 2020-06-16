@@ -77,11 +77,58 @@ function closePopUp(){
     })
 }
 
+
+
+
+// Home Page
+var slideIndex = 1;
+showDivs(slideIndex);
+
+// Onclick function when the user click on any arrows present on the slides header
+function plusDivs(n){
+    showDivs(slideIndex+=n);
+}
+
+function initMap() {
+    // The location of Uluru
+    var uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 4, center: uluru });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({ position: uluru, map: map });
+}
+
+function showDivs(n){
+    var i;
+    var x = document.getElementsByClassName("slide");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length
+    }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+// Automaticly change slide 
+var moveSlides = window.setInterval(function(){
+    plusDivs(+1);
+  }, 4500);
+
+
+// If the user click on any arrow, the slider become 100% manual 
+function stopAutoSlide(){
+    clearInterval(moveSlides);
+}
+
 const app = () => {
     navSlide();
     initListerner();
     openPopUp();
-    closePopUp()
+    closePopUp();
+    moveSlides();
+    initMap();
 }
 
 
