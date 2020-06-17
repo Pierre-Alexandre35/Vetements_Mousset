@@ -122,6 +122,21 @@ function stopAutoSlide(){
     clearInterval(moveSlides);
 }
 
+
+
+// Changer navbar background color after scrolling 
+var myNav = document.getElementById('nav');
+window.onscroll = function () { 
+    if (window.scrollY >= 40 ) {
+        myNav.classList.add("nav-colored");
+        myNav.classList.remove("nav-transparent");
+    } 
+    else {
+        myNav.classList.add("nav-transparent");
+        myNav.classList.remove("nav-colored");
+    }
+};
+
 const app = () => {
     navSlide();
     initListerner();
